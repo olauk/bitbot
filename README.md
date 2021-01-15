@@ -3,7 +3,7 @@
 
 ## Tutorial
 
-* [tutorial](/tutorial)
+* [tutorial](/bitbot/tutorial)
 
 ## Use as Extension
 
