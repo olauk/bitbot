@@ -22,13 +22,6 @@ To edit this repository in MakeCode.
 * klikk på **Importer** og så på **Importér URL**
 * lim inn **https://github.com/olauk/bitbot** og klikk på importér
 
-## Forhåndsvisning av blokker
-
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![En opptegnet visning av blokkene](https://github.com/olauk/bitbot/raw/master/.github/makecode/blocks.png)
-
 #### Metadata (brukes for søk, visualisering)
 
 * for PXT/microbit
