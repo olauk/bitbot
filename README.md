@@ -3,7 +3,7 @@
 
 ## Tutorial
 
-* [tutorial](/bitbot/tutorial)
+* [tutorial](/bitbot/tutorial) [start](https://makecode.microbit.org/#tutorial:github:olauk/bitbot/tutorial)
 
 ## Use as Extension
 
