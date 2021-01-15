@@ -1,6 +1,10 @@
 
 > Åpne denne siden på [https://olauk.github.io/bitbot/](https://olauk.github.io/bitbot/)
 
+## Tutorial
+
+* [tutorial](/tutorial)
+
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
