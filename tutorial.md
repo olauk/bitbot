@@ -4,7 +4,7 @@
 
 ### Introduksjon Bit:Bot @unplugged
 
-Bit:bot er en robotbil som er laget spesiel til bruk sammen med micro:bit.
+Bit:bot er en robotbil som er laget for bruk sammen med micro:bit.
 ![BitBot oversikt](https://github.com/olauk/static/blob/master/bitbotXL.png?raw=true)
 
 ### Kjøring med Bit:bot @unplugged
@@ -94,14 +94,60 @@ bitbot.rotatems(BBRobotDirection.Left, 20, 500)
 bitbot.go(BBDirection.Forward, 100)
 bitbot.rotate(BBRobotDirection.Left, 20)
 ```
-### Oppdrag 1: @showdialog
+## Oppdrag 1:
 
-Oppdrag 1:
+### Oppdrag 1: @unplugged
 
 Du skal nå endre i ditt program slik at Bit:bot kjører 1 meter frem, snur 180 grader og kjører 1 meter tilbake.
 
-
+### Oppdrag 1 del 1:
 Prøv selv uten å se på hintet. Bit:bot kjører litt forskjellig ut i fra hvor nye batterier man har, så verdiene i hintet trenger ikke å stemme helt hos deg.
+
+```blocks
+input.onButtonPressed(Button.A, function (){
+bitbot.goms(BBDirection.Forward, 100, 3000)
+bitbot.rotatems(BBRobotDirection.Left, 20, 950)
+bitbot.goms(BBDirection.Forward, 100, 3000)
+})
+``` 
+```ghost
+bitbot.go(BBDirection.Forward, 100)
+bitbot.rotate(BBRobotDirection.Left, 20)
+bitbot.setLedColor(0xFF0000)
+bitbot.ledRainbow()
+```
+
+### Oppdrag 1 del 2:
+
+Pynt din Bit:bot med lys! Skru på ledlysene i en farge du liker.
+
+Hent ``||bitbot:Sett alle LED til||`` fra ``||bitbot:BitBot Lys||`` og velg selv om du vil at lysene skal skrus på når programmet starter (Plasser blokken i ``||basic:Ved start||``) eller når kjøringen starter (Plasser blokken i ``||input:Når knapp A trykkes||``)
+```blocks
+input.onButtonPressed(Button.A, function (){
+bitbot.goms(BBDirection.Forward, 100, 3000)
+bitbot.rotatems(BBRobotDirection.Left, 20, 950)
+bitbot.goms(BBDirection.Forward, 100, 3000)
+})
+
+bitbot.setLedColor(0x18E600)
+``` 
+```ghost
+bitbot.go(BBDirection.Forward, 100)
+bitbot.rotate(BBRobotDirection.Left, 20)
+bitbot.setLedColor(0x18E600)
+bitbot.ledRainbow()
+```
+
+## Oppdrag 2:
+
+### Oppdrag 2: @unplugged
+
+Du er nå klar til å følge litt enklere instruksjoner. 
+
+Vi har samlet alle ressursene tilknyttet super:bit på denne nettsiden:
+https://www.vitensenter.no/superbit/laerer/
+
+Neste oppdrag er å kjøre en løype med Bit:bot. Oppgaven finner du direkte her: https://www.vitensenter.no/superbit/laerer/superbit-oppdraget/kjoer-en-loeype/
 
 
 ```package
