@@ -9,12 +9,12 @@ Bit:bot er en robotbil som er laget for bruk sammen med micro:bit.
 
 ### Kjøring med Bit:bot @unplugged
 
-Bit:bot styres av to motorer. En motor på hvert hjul. Ved å bestemme fart og retning på motorene kan vi kontrollere bilen.
+Bit:boten styres av to motorer. En motor på hvert hjul. Ved å bestemme fart og retning på motorene kan vi kontrollere bilen.
 ![BitBot motorer](https://github.com/olauk/static/blob/master/bitbotXLmotor.png?raw=true)
 
 ### Lys på Bit:Bot @unplugged
 
-Bit:bot har 12 LED-lys. 6 på hver "arm". Disse kan stilles inn i ulike farger og kan kontrolleres hver for seg eller samlet.
+Bit:boten har 12 LED-lys. 6 på hver "arm". Disse kan stilles inn i ulike farger og kan kontrolleres hver for seg eller samlet.
 ![BitBot LED](https://github.com/olauk/static/blob/master/bitbotXLled.png?raw=true)
 
 ### Sensorer på Bit:Bot @unplugged
@@ -25,7 +25,7 @@ Linjesensorene oppfatter om bilen kjører på et lyst eller mørkt underlag.
 __Bit:bot har to lyssensorer.__ 
 De er montert ytterst på hver av "armene" på bilen. Disse måler lysstyrke som en verdi mellom 0 og 255.
 
-I tillegg kan man montere på en __Ultralydsensor__ som måler avstand. Den monteres i kontakten helt fremst på bitbot. Denne kan måle avstand i cm frem til nærmeste hindring.
+I tillegg kan man montere på en __Ultralydsensor__ som måler avstand. Den monteres i kontakten helt fremst på bitboten. Denne kan måle avstand i cm frem til nærmeste hindring.
 ![BitBot sensor](https://github.com/olauk/static/blob/master/bitbotXLsensor.png?raw=true)
 
 ### Annet utstyr på Bit:Bot @unplugged
@@ -41,7 +41,7 @@ Bit:bot har en __penneholder__ hvor man kan plassere en tusj eller penn til å t
 
 __Micro:bit__ kobles til __Bit:bot__ ved å plassere micro:biten i _kantkontakten_ foran batteriene på bit:boten. Pass på at micro:bit blir stående med skjerm og knappene bort fra batteriene på bit:bot.
 
-Nå er Bit:bot og Micro:bit klar til å programmeres. Micro:biten kan fint stå plassert i bit:bot når man kobler til USB-kabel i datamaskinen, eller kobler til iPad via bluetooth.
+Nå er Bit:boten og Micro:bit klar til å programmeres. Micro:biten kan fint stå plassert i bit:boten når man kobler til USB-kabel i datamaskinen, eller kobler til iPad via bluetooth.
 ![BitBot tilkobling](https://github.com/olauk/static/blob/master/BitBot_microbit.jpg?raw=true)
 
 
