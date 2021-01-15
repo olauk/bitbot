@@ -37,31 +37,74 @@ Bit:bot har kontakter som lar deg koble til to __servomotorer__. På denne måte
 Bit:bot har en __penneholder__ hvor man kan plassere en tusj eller penn til å tegne mønster.
 ![BitBot utstyr](https://github.com/olauk/static/blob/master/bitbotXLbuzz.png?raw=true)
 
+### Sammenkobling av Bit:bot og Micro:bit @unplugged
+
+__Micro:bit__ kobles til __Bit:bot__ ved å plassere micro:biten i _kantkontakten_ foran batteriene på bit:boten. Pass på at micro:bit blir stående med skjerm og knappene bort fra batteriene på bit:bot.
+
+Nå er Bit:bot og Micro:bit klar til å programmeres. Micro:biten kan fint stå plassert i bit:bot når man kobler til USB-kabel i datamaskinen, eller kobler til iPad via bluetooth.
+![BitBot tilkobling](https://github.com/olauk/static/blob/master/BitBot_microbit.jpg?raw=true)
+
 
 ## Kontroll av Bit:Bot
 
-### Kjør og sving
+### Kjør fremover
 Vi kontrollerer fart og retning med hvor mye strøm som sendes til motoren. Forenklet så kalles dette _fart_ i blokkene i MakeCode og vi kan velge en prosentvis verdi fra 0 - 100.
 
-Vi kan kontrollere bevegelse fremover og bakover med to ulike blokker. En angir kun fart og en angir både fart og varigheten av kjøringen i antall millisekunder.
-Hent blokken ``||input:Når knapp A trykkes||``` fra ``||input:Inndata||`` og plasser den på arbeidsflaten.
-Hent blokken ``||bitbot:Kjør fremover med fart og millisekunder||`` fra ``||bitbot: BitBot Kjøring||`` og plasser den i ``||input:Når knapp A trykkes||``
+Vi kan kontrollere bevegelse fremover og bakover med to ulike blokker. 
+``||bitbot:Kjør fremover med fart||`` som kun angir fart. (Her kan du tenke at bit:bot vil kjøre, helt til du gir en ny kommando i programmet.) 
+
+``||bitbot:Kjør fremover med fart i millisekunder||``   angir både fart og varigheten av kjøringen i antall millisekunder.
+
+### Legg til blokker
+Hent blokken ``||input:Når knapp A trykkes||`` fra ``||input:Inndata||`` og plasser den på arbeidsflaten.
+
+Hent blokken ``||bitbot:Kjør fremover med fart i millisekunder||`` fra ``||bitbot: BitBot Kjøring||`` og plasser den i ``||input:Når knapp A trykkes||``
+
+Sett _fart_ til __100%__ og _varighet_ til __1000 millisekunder__.
+
 
 Last ned programmet til din micro:bit, koble den til Bit:bot og se hva som skjer når du trykker knapp A.
 
 ```blocks
-
+input.onButtonPressed(Button.A, function (){
 bitbot.goms(BBDirection.Forward, 100, 1000)
+})
 ``` 
+```ghost
+bitbot.go(BBDirection.Forward, 100)
+bitbot.rotate(BBRobotDirection.Left, 20)
+```
 
-### Step 2
+### Legg til en sving
+Vi får Bit:bot til å svinge med ``||bitbot:Snu til venstre/høyre med fart||``. Her har vi også mulighet til å velge blokker som angir kun fart eller fart og millisekunder.
+
+Hent blokken ``||bitbot:Snu til venstre/høyre med fart i millisekunder||`` fra ``||bitbot: Bitbot Kjøring||`` og plasser den under ``||bitbot:Kjør fremover med fart i millisekund||``
+
+Sett _fart_ til __20%__ og _varighet_ til __500 millisekunder__.
+
+Last ned programmet til din micro:bit, koble den til Bit:bot og se hva som skjer når du trykker knapp A.
 
 ```blocks
-bitbot.goms(BBDirection.Forward, 60, 400)
-bitbot.rotatems(BBRobotDirection.Left, 60, 400)
+input.onButtonPressed(Button.A, function (){
+bitbot.goms(BBDirection.Forward, 100, 1000)
+bitbot.rotatems(BBRobotDirection.Left, 20, 500)
+})
 ``` 
-Congratulations, you did it!
+```ghost
+bitbot.go(BBDirection.Forward, 100)
+bitbot.rotate(BBRobotDirection.Left, 20)
+```
+### Oppdrag 1: @showdialog
 
-```packets
-        "BitBot": "github:4tronix/bitbot#1.4.6"
+Oppdrag 1:
+
+Du skal nå endre i ditt program slik at Bit:bot kjører 1 meter frem, snur 180 grader og kjører 1 meter tilbake.
+
+
+Prøv selv uten å se på hintet. Bit:bot kjører litt forskjellig ut i fra hvor nye batterier man har, så verdiene i hintet trenger ikke å stemme helt hos deg.
+
+
+```package
+bitbot=github:4tronix/bitbot
 ``` 
+
